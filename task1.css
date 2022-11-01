@@ -1,0 +1,101 @@
+/*ブラウザがそれぞれ持っているCSSをリセットするための記述*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.main-area {
+  width: 960px;
+  padding: 50px 0
+}
+
+.topic {
+  width: 300px;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.topic:nth-child(1) {
+  margin-right: 30px;
+}
+
+.topic:nth-child(2) {
+  margin-right: 30px;
+}
+
+.img1 {
+  height: 150px;
+  background-image: url(img3/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.img2 {
+  height: 150px;
+  background-image: url(img3/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.img3 {
+  height: 150px;
+  background-image: url(img3/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+.step {
+  left: -10px;
+  top: -10px;
+  width: 42px;
+  position: relative;
+  background-color: #ff9a4b;
+  color: #fff
+}
+
+.title {
+  margin: 15px 0 5px 0;
+}
+
+footer {
+  height: 50px;
+  background-color: #aaa;
+}
+
+/*768px以下の際に適応される設定*/
+@media screen and (max-width:768px) {
+
+  main {
+    display: inline-block;
+  }
+
+  .main-area {
+  width: 100%;
+  }
+
+  .topic {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .topic:nth-child(1) {
+  margin: 0 auto 20px;
+  }
+
+  .topic:nth-child(2) {
+  margin: 0 auto 20px;
+  }
+}
